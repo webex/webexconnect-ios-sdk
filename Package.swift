@@ -4,33 +4,33 @@ let package = Package(
   name: "WebexConnect",
   products: [
       .library(
-          name: "WebexConnectCoreSDK-Full",
-          targets: ["WebexConnectCoreSDK-Full"]
+          name: "WebexConnectCoreSDKFull",
+          targets: ["WebexConnectCoreSDKFull"]
       ),
       .library(
-          name: "WebexConnectCoreSDK-Lite",
-          targets: ["WebexConnectCoreSDK-Lite"]
+          name: "WebexConnectCoreSDKLite",
+          targets: ["WebexConnectCoreSDKLite"]
       ),
       .library(
           name: "WebexConnectNotificationServiceExtension",
-          targets: ["WebexConnectNotificationServiceExtension"]
+          targets: ["IMIConnectNotificationServiceExtension"]
       )
   ],
   targets: [
       .binaryTarget(
-          name: "WebexConnectCoreSDK-Full",
-          url: "https://github.com/webex/wxconnect-core-ios-sdk/releases/download/2.17.0/WebexConnectCoreSDK-Full.zip",
-          checksum: "2616575ed1d08cf2b0fdadbe26594f9ba1f00936747f6e1158073a579387f37a"
+          name: "WebexConnectCoreSDKFull",
+          url: "https://github.com/webex/wxconnect-core-ios-sdk/releases/download/2.17.0/WebexConnectCoreSDKFull_SPM.zip",
+          checksum: "4078a1f4d6dab47785a458cf0d1e70367f1e4db5cf61a6fcc34d554e1b0bc530"
       ),
       .binaryTarget(
-          name: "WebexConnectCoreSDK-Lite",
-          url: "https://github.com/webex/wxconnect-core-ios-sdk/releases/download/2.17.0/WebexConnectCoreSDK-Lite.zip",
-          checksum: "15cde55b2999f246bd950fa8cff4e3ebf4b5d16746492792bd1a10492c77ec02"
+          name: "WebexConnectCoreSDKLite",
+          url: "https://github.com/webex/wxconnect-core-ios-sdk/releases/download/2.17.0/WebexConnectCoreSDKLite_SPM.zip",
+          checksum: "a22db8ed10d2d5307b780e55c63dd38baf73079a1056bad22404cb080371cfe8"
       ),
       .binaryTarget(
-          name: "WebexConnectNotificationServiceExtension",
+          name: "IMIConnectNotificationServiceExtension",
           url: "https://github.com/webex/wxconnect-core-ios-sdk/releases/download/2.17.0/WebexConnectNotificationServiceExtension.zip",
-          checksum: "c503476b22060cc88a434cb53e3d91cbc59e845e98983377d47b14bb342f7c5f"
+          checksum: "f0b6efa27678f891d611e13953ff1cbc8ea741ea5368a8f0992a260b73304b3a"
       )
   ]
 )
