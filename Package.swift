@@ -13,7 +13,7 @@ let package = Package(
       ),
       .library(
           name: "WebexConnectNotificationServiceExtension",
-          targets: ["IMIConnectNotificationServiceExtension"]
+          targets: ["IMIconnectNotificationServiceExtension"]
       )
   ],
   targets: [
@@ -28,7 +28,7 @@ let package = Package(
           checksum: "a22db8ed10d2d5307b780e55c63dd38baf73079a1056bad22404cb080371cfe8"
       ),
       .binaryTarget(
-          name: "IMIConnectNotificationServiceExtension",
+          name: "IMIconnectNotificationServiceExtension",
           url: "https://github.com/webex/wxconnect-core-ios-sdk/releases/download/2.17.0/WebexConnectNotificationServiceExtension.zip",
           checksum: "f0b6efa27678f891d611e13953ff1cbc8ea741ea5368a8f0992a260b73304b3a"
       )
