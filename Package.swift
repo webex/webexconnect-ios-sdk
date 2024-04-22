@@ -19,18 +19,18 @@ let package = Package(
   targets: [
       .binaryTarget(
           name: "WebexConnectCoreSDKFull",
-          url: "https://github.com/webex/wxconnect-core-ios-sdk/releases/download/2.19.3/WebexConnectCoreSDKFull_SPM.zip",
-          checksum: "b165b0a8443d85615176166d803fc7fa94d3c9fdbf31f77144b313c394c51198"
+          url: "https://github.com/webex/wxconnect-core-ios-sdk/releases/download/2.19.4/WebexConnectCoreSDKFull_SPM.zip",
+          checksum: "e274b101883a75e3b7211c2866b61ac9afe699e791c54aaab265baf4b8edb606"
       ),
       .binaryTarget(
           name: "WebexConnectCoreSDKLite",
-          url: "https://github.com/webex/wxconnect-core-ios-sdk/releases/download/2.19.3/WebexConnectCoreSDKLite_SPM.zip",
-          checksum: "eccfacecea7ecad11abe022a679ee7655a8a9c881be2855200744d08ddf299ff"
+          url: "https://github.com/webex/wxconnect-core-ios-sdk/releases/download/2.19.4/WebexConnectCoreSDKLite_SPM.zip",
+          checksum: "52fc5dc40f55d53ca27293bd792ef9dee727d50cf795d385782f1ef1fc0737cf"
       ),
       .binaryTarget(
           name: "IMIconnectNotificationServiceExtension",
-          url: "https://github.com/webex/wxconnect-core-ios-sdk/releases/download/2.19.3/WebexConnectNotificationServiceExtension.zip",
-          checksum: "07b7b242bfa18a3340c66951fed7e0e11b661e1e0515ddda962017d6e3ff74dc"
+          url: "https://github.com/webex/wxconnect-core-ios-sdk/releases/download/2.19.4/WebexConnectNotificationServiceExtension.zip",
+          checksum: "992d5b43e6026da331e989f779f961281deaaee87cd18a8feb22b8d68c6a5653"
       )
   ]
 )
