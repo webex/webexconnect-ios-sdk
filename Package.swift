@@ -25,12 +25,12 @@ let package = Package(
       .binaryTarget(
           name: "WebexConnectCoreSDKLite",
           url: "https://github.com/webex/wxconnect-core-ios-sdk/releases/download/2.19.5/WebexConnectCoreSDKLite_SPM.zip",
-          checksum: ""
+          checksum: "230efaca397b1e39642844832204e626ad21bd4ea5e76b1fa55d23cdb9eaeeb8"
       ),
       .binaryTarget(
           name: "IMIconnectNotificationServiceExtension",
           url: "https://github.com/webex/wxconnect-core-ios-sdk/releases/download/2.19.5/WebexConnectNotificationServiceExtension.zip",
-          checksum: "a03f1da0e289d84e0ba68603e7660e4384b39d3ce19be8db691bafe09ca07b27"
+          checksum: "f770134c00ed59252148caf8b116860e5cb6603b6f98b15fab66a1308ebb9a75"
       )
   ]
 )
