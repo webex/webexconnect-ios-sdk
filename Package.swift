@@ -4,42 +4,33 @@ let package = Package(
   name: "WebexConnect",
   products: [
       .library(
-          name: "WebexConnectCore",
-          targets: ["WebexConnectCore"]
+          name: "WebexConnectCoreSDKFull",
+          targets: ["WebexConnectCoreSDKFull"]
       ),
       .library(
-          name: "WebexConnectPush",
-          targets: ["WebexConnectPush"]
-      ),
-        .library(
-          name: "WebexConnectInAppMessaging",
-          targets: ["WebexConnectInAppMessaging"]
+          name: "WebexConnectCoreSDKLite",
+          targets: ["WebexConnectCoreSDKLite"]
       ),
       .library(
           name: "WebexConnectNotificationServiceExtension",
-          targets: ["WebexConnectNotificationServiceExtension"]
+          targets: ["IMIconnectNotificationServiceExtension"]
       )
   ],
   targets: [
       .binaryTarget(
-          name: "WebexConnectCore",
-          url: "https://github.com/webex/webexconnect-ios-sdk/releases/download/3.0.0/WebexConnectCore.zip",
-          checksum: "e40b0fe5781e1f7a39d6dd019b54df103ab871695848334bcff85b464edf92ed"
+          name: "WebexConnectCoreSDKFull",
+          url: "https://github.com/webex/webexconnect-ios-sdk/releases/download/2.19.7/WebexConnectCoreSDKFull_SPM.zip",
+          checksum: "34a91a4d15354e9a18a6d624eef782e9eef3a58f339de3381d8a33b868174291"
       ),
       .binaryTarget(
-          name: "WebexConnectPush",
-          url: "https://github.com/webex/webexconnect-ios-sdk/releases/download/3.0.0/WebexConnectPush.zip",
-          checksum: "d259ab3302d76df1ee392f2502664150286dc430e755bc4d27167e77d82cad30"
-      ),
-    .binaryTarget(
-          name: "WebexConnectInAppMessaging",
-          url: "https://github.com/webex/webexconnect-ios-sdk/releases/download/3.0.0/WebexConnectInAppMessaging.zip",
-          checksum: "4db34593428ec0267e6fcb6be56a9eef58c120169f1e31b485cb75c0418c62e9"
+          name: "WebexConnectCoreSDKLite",
+          url: "https://github.com/webex/webexconnect-ios-sdk/releases/download/2.19.7/WebexConnectCoreSDKLite_SPM.zip",
+          checksum: "ba6dfab10ae7710a00468fadbdb0ade488222cb112a03739b3dfc806d07de92f"
       ),
       .binaryTarget(
-          name: "WebexConnectNotificationServiceExtension",
-          url: "https://github.com/webex/webexconnect-ios-sdk/releases/download/3.0.0/WebexConnectNotificationServiceExtension.zip",
-          checksum: "898954fe2ce03639dbb11c8ef976eda69b108034bdffe7c9e82bf13f2e140238"
+          name: "IMIconnectNotificationServiceExtension",
+          url: "https://github.com/webex/webexconnect-ios-sdk/releases/download/2.19.7/WebexConnectNotificationServiceExtension.zip",
+          checksum: "b1c269d5c4edcc6fbe16286b5fb4b5858248fe1296d07e7e893fbf1b3e7c6326"
       )
   ]
 )
