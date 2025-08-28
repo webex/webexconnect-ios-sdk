@@ -24,22 +24,22 @@ let package = Package(
       .binaryTarget(
           name: "WebexConnectCore",
           url: "https://github.com/webex/webexconnect-ios-sdk/releases/download/3.0.4/WebexConnectCore.zip",
-          checksum: "69f6f7db0b6749acb009a1210d104f85b58daf9b6b38dbc9becd9188979bd7cf"
+          checksum: "1b87d7cff3ff7bac7fd4a1e7b5d02ca48cfbcb25c88977ee9d70f1df90774ed0"
       ),
       .binaryTarget(
           name: "WebexConnectPush",
           url: "https://github.com/webex/webexconnect-ios-sdk/releases/download/3.0.4/WebexConnectPush.zip",
-          checksum: "ab6a8a2889da8a58b0bc6dba11f1ced5a8f2fc56924d7878d5e62c2e4ed3bb44"
+          checksum: "ba677579e8356ba5ee66df72cf2b52febf905a2606d8f73386ddd2f56323aa28"
       ),
     .binaryTarget(
           name: "WebexConnectInAppMessaging",
           url: "https://github.com/webex/webexconnect-ios-sdk/releases/download/3.0.4/WebexConnectInAppMessaging.zip",
-          checksum: "8c9f72e0fc06eb8afd40d90931b692ae8cc6a3b78b9b764d1e2749a6c6b7a298"
+          checksum: "ac68dd0582d23b5e5af7874b24ee34e147143180ab876bcbee16695842d4f378"
       ),
       .binaryTarget(
           name: "WebexConnectNotificationServiceExtension",
           url: "https://github.com/webex/webexconnect-ios-sdk/releases/download/3.0.4/WebexConnectNotificationServiceExtension.zip",
-          checksum: "c72544932ad1b0e36df3067d48156c563add99d502c4a8f5b0985453ab9acb9d"
+          checksum: "652f90ac2fa17ff6673aad71d0e42533829cba0c4f2cbad0cfc23b6688cfd7c1"
       )
   ]
 )
