@@ -5,7 +5,7 @@ let package = Package(
   products: [
       .library(
           name: "WebexConnectCore",
-          targets: ["WebexConnectCore"]
+          targets: ["WebexConnectCoreWrapper"]
       ),
       .library(
           name: "WebexConnectPush",
@@ -20,26 +20,36 @@ let package = Package(
           targets: ["WebexConnectNotificationServiceExtension"]
       )
   ],
+   dependencies: [
+        .package(url: "https://github.com/sqlcipher/SQLCipher.swift.git", from: "4.10.0")
+    ],
   targets: [
       .binaryTarget(
           name: "WebexConnectCore",
-          url: "https://github.com/webex/webexconnect-ios-sdk/releases/download/3.0.4/WebexConnectCore.zip",
-          checksum: "1b87d7cff3ff7bac7fd4a1e7b5d02ca48cfbcb25c88977ee9d70f1df90774ed0"
+          url: "https://github.com/webex/webexconnect-ios-sdk/releases/download/3.0.5/WebexConnectCore.zip",
+          checksum: "d90affaef0320ae9ba417d35b89d43f4e7b880de5a3fe32eb041731b56e478a9"
       ),
       .binaryTarget(
           name: "WebexConnectPush",
-          url: "https://github.com/webex/webexconnect-ios-sdk/releases/download/3.0.4/WebexConnectPush.zip",
-          checksum: "ba677579e8356ba5ee66df72cf2b52febf905a2606d8f73386ddd2f56323aa28"
+          url: "https://github.com/webex/webexconnect-ios-sdk/releases/download/3.0.5/WebexConnectPush.zip",
+          checksum: "c975dc092ab1475c24a21c6b8175863371a7ecefa1a7d5e0eed76382f7a1fb65"
       ),
     .binaryTarget(
           name: "WebexConnectInAppMessaging",
-          url: "https://github.com/webex/webexconnect-ios-sdk/releases/download/3.0.4/WebexConnectInAppMessaging.zip",
-          checksum: "ac68dd0582d23b5e5af7874b24ee34e147143180ab876bcbee16695842d4f378"
+          url: "https://github.com/webex/webexconnect-ios-sdk/releases/download/3.0.5/WebexConnectInAppMessaging.zip",
+          checksum: "cea1d3d812f5503a860535e1364efc676ea1c00901920f49a031b53d494357a7"
       ),
       .binaryTarget(
           name: "WebexConnectNotificationServiceExtension",
-          url: "https://github.com/webex/webexconnect-ios-sdk/releases/download/3.0.4/WebexConnectNotificationServiceExtension.zip",
-          checksum: "652f90ac2fa17ff6673aad71d0e42533829cba0c4f2cbad0cfc23b6688cfd7c1"
-      )
+          url: "https://github.com/webex/webexconnect-ios-sdk/releases/download/3.0.5/WebexConnectNotificationServiceExtension.zip",
+          checksum: "38d95621aa10bd1562ec328c133815140ab87c666c980f8a3b819d845d3c8cf9"
+      ),
+      .target(
+            name: "WebexConnectCoreWrapper",
+            dependencies: [
+                "WebexConnectCore",
+                .product(name: "SQLCipher", package: "SQLCipher.swift")
+            ]
+        )
   ]
 )
